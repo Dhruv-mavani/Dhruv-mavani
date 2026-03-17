@@ -8,7 +8,7 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4 # Updated from v3 to v4 to fix the warning
       - name: Fetch Latest Repo
         run: |
           # Fetch your latest repository
@@ -19,17 +19,14 @@ jobs:
           REPO_HOMEPAGE=$(echo $REPO_DATA | jq -r '.homepage')
           REPO_DESC=$(echo $REPO_DATA | jq -r '.description // "No description provided."')
           
-          # Logic: Use homepage if it's not null/empty, otherwise use the repo URL
           if [[ "$REPO_HOMEPAGE" != "null" && "$REPO_HOMEPAGE" != "" ]]; then
              TARGET_URL=$REPO_HOMEPAGE
           else
              TARGET_URL=$REPO_HTML_URL
           fi
           
-          # Create the final Markdown link
           NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
           
-          # Clear the space between markers and insert the new content
           sed -i "/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }" README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
