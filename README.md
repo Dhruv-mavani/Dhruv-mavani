@@ -37,7 +37,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[lastistheloser](https://lastistheloser.onrender.com)**: No description provided.
+- **[lastistheloser](https://lastistheloser.onrender.com)**: Real-time multiplayer elimination. Don't be the last, or you're the loser.
 <!-- LATEST_REPO_END -->
 
 ---
