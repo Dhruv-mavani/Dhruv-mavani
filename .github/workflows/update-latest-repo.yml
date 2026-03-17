@@ -2,7 +2,7 @@ name: Update Latest Repo
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
-  workflow_dispatch: # Allows you to run it manually
+  workflow_dispatch:
 
 jobs:
   update-readme:
@@ -11,16 +11,25 @@ jobs:
       - uses: actions/checkout@v3
       - name: Fetch Latest Repo
         run: |
-          # Fetch the latest public repository excluding this profile repo
+          # Fetch your latest repository
           REPO_DATA=$(curl -s "https://api.github.com/users/Dhruv-mavani/repos?sort=created&direction=desc" | jq -r '[.[] | select(.name != "Dhruv-mavani")][0]')
+          
           REPO_NAME=$(echo $REPO_DATA | jq -r '.name')
-          REPO_URL=$(echo $REPO_DATA | jq -r '.html_url')
+          REPO_HTML_URL=$(echo $REPO_DATA | jq -r '.html_url')
+          REPO_HOMEPAGE=$(echo $REPO_DATA | jq -r '.homepage')
           REPO_DESC=$(echo $REPO_DATA | jq -r '.description // "No description provided."')
           
-          # Create the new link string
-          NEW_CONTENT="- **[$REPO_NAME]($REPO_URL)**: $REPO_DESC"
+          # Logic: Use homepage if it's not null/empty, otherwise use the repo URL
+          if [[ "$REPO_HOMEPAGE" != "null" && "$REPO_HOMEPAGE" != "" ]]; then
+             TARGET_URL=$REPO_HOMEPAGE
+          else
+             TARGET_URL=$REPO_HTML_URL
+          fi
           
-          # Use sed to replace the content between markers
+          # Create the final Markdown link
+          NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
+          
+          # Clear the space between markers and insert the new content
           sed -i "/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }" README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
@@ -29,5 +38,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update latest repo" || exit 0
+          git commit -m "Update latest project link" || exit 0
           git push
