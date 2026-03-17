@@ -1,4 +1,4 @@
-# <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=38&duration=3000&pause=500&color=EA580C&width=435&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer.;Turning+coffee+into+code." alt="Typing SVG" />
+# <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=38&duration=3000&pause=500&color=EA580C&width=435&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer." alt="Typing SVG" />
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Building%20the%20future-Slate?style=flat-square&logoColor=white" />
