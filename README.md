@@ -28,7 +28,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 ---
 
 ### 🛠️ Currently Working On
-- **[Last Is The Loser](https://last-is-the-loser.onrender.com)**: A high-stakes, real-time elimination game.
+- **[Last Is The Loser](https://lastistheloser.onrender.com)**: A high-stakes, real-time elimination game.
 - Finalizing my professional portfolio at **[dhruvmavani.me](https://www.dhruvmavani.me)**.
 
 ---
@@ -42,5 +42,5 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 ---
 
 <p align="center">
-  <i>"Simplicity is the ultimate sophistication."</i>
+  <i>"Keep Going Mate"</i>
 </p>
