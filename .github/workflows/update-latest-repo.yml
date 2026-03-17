@@ -7,8 +7,10 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    env: # This line + the one below fixes the warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
-      - uses: actions/checkout@v4 # Updated from v3 to v4 to fix the warning
+      - uses: actions/checkout@v4
       - name: Fetch Latest Repo
         run: |
           # Fetch your latest repository
