@@ -1,4 +1,9 @@
 name: Update Latest Repo
+
+# This silences the Node.js 24 warning for the entire workflow
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   schedule:
     - cron: '0 * * * *' # Runs every hour
@@ -7,8 +12,6 @@ on:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    env: # This line + the one below fixes the warning
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true 
     steps:
       - uses: actions/checkout@v4
       - name: Fetch Latest Repo
