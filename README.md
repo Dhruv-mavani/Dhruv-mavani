@@ -1,4 +1,4 @@
-# <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=38&duration=3000&pause=500&color=EA580C&width=435&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer." alt="Typing SVG" />
+# <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=40&duration=3000&pause=500&color=EA580C&width=600&height=70&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer.;Turning+coffee+into+code." alt="Typing SVG" />
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Building%20the%20future-Slate?style=flat-square&logoColor=white" />
@@ -11,9 +11,13 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 ### 🚀 Tech Stack
 
 <div align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,express,mongodb,react,nextjs,html,css,tailwind,git,github,vercel,vscode" />
-  </a>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </div>
 
 ---
@@ -31,9 +35,9 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ---
 
-### 🛠️ Currently Working On
-- **[Last Is The Loser](https://lastistheloser.onrender.com)**: A high-stakes, real-time elimination game.
-- Finalizing my professional portfolio at **[dhruvmavani.me](https://www.dhruvmavani.me)**.
+### 🛠️ Latest Project
+<!-- LATEST_REPO_START -->
+<!-- LATEST_REPO_END -->
 
 ---
 
