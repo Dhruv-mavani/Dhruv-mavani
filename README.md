@@ -37,7 +37,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[lastistheloser](https://lastistheloser.onrender.com)**: Real-time multiplayer elimination. Don't be the last, or you're the loser.
+- **[palashcareclinic](https://palashcareclinic.vercel.app)**: Palash Care Clinic: Delivering trusted, patient-centered care with advanced treatments and a focus on comfrot and results.
 <!-- LATEST_REPO_END -->
 
 ---
