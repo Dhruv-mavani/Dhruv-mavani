@@ -30,7 +30,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 </div>
 
 <div align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dhruv-mavani&layout=compact&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&bg_color=ffffff" />
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/api/top-langs/?username=Dhruv-mavani&layout=compact&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&bg_color=ffffff" />
 </div>
 
 ---
