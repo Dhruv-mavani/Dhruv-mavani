@@ -26,7 +26,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 <div align="left">
   <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Dhruv-mavani&show_icons=true&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&icon_color=ea580c&bg_color=ffffff" />
-  <img height="180em" src="https://github-readme-streak-stats.heroku.com/?user=Dhruv-mavani&theme=rose&hide_border=true&fire=ea580c&ring=ea580c&currStreakLabel=ea580c&sideNums=334155&sideLabels=334155&dates=334155&bg_color=ffffff" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Dhruv-mavani&theme=rose&hide_border=true&fire=ea580c&ring=ea580c&currStreakLabel=ea580c&sideNums=334155&sideLabels=334155&dates=334155&bg_color=ffffff" />
 </div>
 
 <div align="left">
