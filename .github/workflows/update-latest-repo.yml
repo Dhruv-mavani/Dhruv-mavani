@@ -15,6 +15,7 @@ concurrency:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,28 +25,40 @@ jobs:
       - name: Fetch and Update Content
         run: |
           REPO_DATA=$(curl -s "https://api.github.com/users/dhruv-mavani/repos?sort=created&direction=desc" | jq -r '[.[] | select(.name != "dhruv-mavani")][0]')
-          REPO_NAME=$(echo $REPO_DATA | jq -r '.name')
-          REPO_HTML_URL=$(echo $REPO_DATA | jq -r '.html_url')
-          REPO_HOMEPAGE=$(echo $REPO_DATA | jq -r '.homepage')
-          REPO_DESC=$(echo $REPO_DATA | jq -r '.description // "No description provided."')
-          
+
+          REPO_NAME=$(echo "$REPO_DATA" | jq -r '.name')
+          REPO_HTML_URL=$(echo "$REPO_DATA" | jq -r '.html_url')
+          REPO_HOMEPAGE=$(echo "$REPO_DATA" | jq -r '.homepage')
+          REPO_DESC=$(echo "$REPO_DATA" | jq -r '.description // "No description provided."')
+
           if [[ "$REPO_HOMEPAGE" != "null" && "$REPO_HOMEPAGE" != "" ]]; then
-              TARGET_URL=$REPO_HOMEPAGE
+            TARGET_URL=$REPO_HOMEPAGE
           else
-              TARGET_URL=$REPO_HTML_URL
+            TARGET_URL=$REPO_HTML_URL
           fi
-          
-          NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
-          
+
+          # Escape '&' for sed safety
+          REPO_DESC_ESCAPED=$(printf '%s\n' "$REPO_DESC" | sed 's/[&]/\\&/g')
+
+          NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC_ESCAPED"
+
           sed -i '/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }' README.md
+
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
-      - name: Update README
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.md
+
+          # Exit if nothing changed
           git diff --cached --quiet && exit 0
+
           git commit -m "Update latest project link"
+
+          # Pull latest changes before pushing
           git pull --rebase origin main
+
           git push origin main
