@@ -36,12 +36,17 @@ jobs:
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
           - name: Commit and Push
-            run: |
-              git config --global user.name "github-actions[bot]"
-              git config --global user.email "github-actions[bot]@users.noreply.github.com"
-              git pull --rebase origin main
-              git add README.md
+              run: |
+                git config --global user.name "github-actions[bot]"
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                
+                git add README.md
+          
+          
               if ! git diff --cached --quiet; then
                 git commit -m "Update latest project link"
-                git push --force-with-lease
-          
+                git pull --rebase origin main
+                git push origin main
+              else
+                echo "No changes to commit"
+              fi
