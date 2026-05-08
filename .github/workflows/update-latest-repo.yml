@@ -12,14 +12,14 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Fetch and Update Content
         run: |
           REPO_DATA=$(curl -s "https://api.github.com/users/dhruv-mavani/repos?sort=created&direction=desc" | jq -r '[.[] | select(.name != "dhruv-mavani")][0]')
-          
           REPO_NAME=$(echo $REPO_DATA | jq -r '.name')
           REPO_HTML_URL=$(echo $REPO_DATA | jq -r '.html_url')
           REPO_HOMEPAGE=$(echo $REPO_DATA | jq -r '.homepage')
@@ -33,16 +33,15 @@ jobs:
           
           NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
           
-          sed -i "/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }" README.md
+          # We use single quotes for the sed command to prevent YAML confusion
+          sed -i '/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }' README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
           git add README.md
-          
           if ! git diff --cached --quiet; then
             git commit -m "Update latest project link"
             git fetch origin main
