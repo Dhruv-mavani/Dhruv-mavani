@@ -1,12 +1,11 @@
 name: Update Latest Repo
 
-# This silences the Node.js 24 warning for the entire workflow
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 on:
   schedule:
-    - cron: '0 * * * *' # Runs every hour
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -14,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Fetch Latest Repo
+        with:
+          fetch-depth: 0 # Fetches all history so rebase works properly
+
+      - name: Fetch and Update Content
         run: |
-          # Fetch your latest repository
-          REPO_DATA=$(curl -s "https://api.github.com/users/Dhruv-mavani/repos?sort=created&direction=desc" | jq -r '[.[] | select(.name != "Dhruv-mavani")][0]')
+          REPO_DATA=$(curl -s "https://api.github.com/users/dhruv-mavani/repos?sort=created&direction=desc" | jq -r '[.[] | select(.name != "dhruv-mavani")][0]')
           
           REPO_NAME=$(echo $REPO_DATA | jq -r '.name')
           REPO_HTML_URL=$(echo $REPO_DATA | jq -r '.html_url')
@@ -25,9 +26,9 @@ jobs:
           REPO_DESC=$(echo $REPO_DATA | jq -r '.description // "No description provided."')
           
           if [[ "$REPO_HOMEPAGE" != "null" && "$REPO_HOMEPAGE" != "" ]]; then
-             TARGET_URL=$REPO_HOMEPAGE
+              TARGET_URL=$REPO_HOMEPAGE
           else
-             TARGET_URL=$REPO_HTML_URL
+              TARGET_URL=$REPO_HTML_URL
           fi
           
           NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
@@ -35,18 +36,18 @@ jobs:
           sed -i "/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }" README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
-          - name: Commit and Push
-              run: |
-                git config --global user.name "github-actions[bot]"
-                git config --global user.email "github-actions[bot]@users.noreply.github.com"
-                
-                git add README.md
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
+          git add README.md
           
-              if ! git diff --cached --quiet; then
-                git commit -m "Update latest project link"
-                git pull --rebase origin main
-                git push origin main
-              else
-                echo "No changes to commit"
-              fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update latest project link"
+            # Pull changes that happened while this action was running
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "No changes detected."
+          fi
