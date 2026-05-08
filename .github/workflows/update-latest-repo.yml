@@ -40,14 +40,11 @@ jobs:
           sed -i '/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }' README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
-      - name: Commit and Push
+      - name: Update README
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          if ! git diff --cached --quiet; then
-            git commit -m "Update latest project link"
-            git push --force-with-lease
-          else
-            echo "No changes detected."
-          fi
+          git commit -m "Update latest project link" || exit 0
+          git pull --rebase  # Add this line
+          git push
