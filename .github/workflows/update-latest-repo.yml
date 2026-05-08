@@ -8,6 +8,10 @@ on:
     - cron: '0 * * * *'
   workflow_dispatch:
 
+concurrency:
+  group: update-latest-repo
+  cancel-in-progress: false
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -33,7 +37,6 @@ jobs:
           
           NEW_CONTENT="- **[$REPO_NAME]($TARGET_URL)**: $REPO_DESC"
           
-          # We use single quotes for the sed command to prevent YAML confusion
           sed -i '/<!-- LATEST_REPO_START -->/,/<!-- LATEST_REPO_END -->/{ /<!-- LATEST_REPO_START -->/b; /<!-- LATEST_REPO_END -->/b; d }' README.md
           sed -i "/<!-- LATEST_REPO_START -->/a $NEW_CONTENT" README.md
 
@@ -41,12 +44,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update latest project link"
-            git push --force-with-lease origin main
+            git push
           else
             echo "No changes detected."
           fi
