@@ -38,7 +38,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[crypto-wallet-generator](https://omniwallet.vercel.app)**: This Code Represents a Simple SOL & ETH Wallet Generator.
+- **[solanalaunchpad](https://solanalaunchpad-delta.vercel.app)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
