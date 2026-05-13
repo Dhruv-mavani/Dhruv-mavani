@@ -38,7 +38,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[solanalaunchpad](https://solanalaunchpad-delta.vercel.app)**: No description provided.
+- **[solanalaunchpad](https://solanaspl.vercel.app)**: A fully autonomous Solana Token Launchpad.
 <!-- LATEST_REPO_END -->
 
 ---
