@@ -38,7 +38,7 @@ I'm a full-stack developer focused on building modern, high-performance web appl
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[LSP-2.0](https://github.com/Dhruv-mavani/LSP-2.0)**: An optimized Liquid Staking Derivative (LSD) protocol on Solana built with Anchor. Features a centralized SOL Vault PDA, CPIs for SPL Token Mint/Burn, Metaplex Metadata integration, and an $O(1)$ lazy reward engine.
+- **[LSP-2.0](https://solanaspl.vercel.app/)**: An optimized Liquid Staking Derivative (LSD) protocol on Solana built with Anchor. Features a centralized SOL Vault PDA, CPIs for SPL Token Mint/Burn, Metaplex Metadata integration, and an $O(1)$ lazy reward engine.
 <!-- LATEST_REPO_END -->
 
 ---
