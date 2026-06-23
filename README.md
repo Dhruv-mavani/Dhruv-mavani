@@ -38,7 +38,7 @@ I build ideas.
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[LSP-2.0](https://solanaspl.vercel.app/)**: An optimized Liquid Staking Derivative (LSD) protocol on Solana built with Anchor. Features a centralized SOL Vault PDA, CPIs for SPL Token Mint/Burn, Metaplex Metadata integration, and an $O(1)$ lazy reward engine.
+- **[Centralized-Exchange--CEX-](https://github.com/Dhruv-mavani/Centralized-Exchange--CEX-)**: 🦀 High-performance Centralized Exchange (CEX) prototype. Features a Rust L3 FIFO matching engine (Actix REST API) and a sharp neomorphic React trading terminal equipped with real-time SVG depth charts and simulated wallet engines.
 <!-- LATEST_REPO_END -->
 
 ---
