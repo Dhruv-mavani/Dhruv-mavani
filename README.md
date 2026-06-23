@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Status-Building%20the%20future-Slate?style=flat-square&logoColor=white" />
 </p>
 
-I'm a full-stack developer focused on building modern, high-performance web applications. I love minimalist design, clean code, and making things move fast.
+I build ideas.
 
 ---
 
