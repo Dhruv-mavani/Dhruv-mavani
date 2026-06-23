@@ -1,7 +1,7 @@
 # <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=40&duration=3000&pause=500&color=EA580C&width=600&height=70&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer.;Turning+coffee+into+code." alt="Typing SVG" />
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Status-Learning%20Solana-Slate?style=flat-square&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Learning%20Solana%20And%20Blockchain%20Infra-Slate?style=flat-square&logoColor=white" />
 </p>
 
 I build ideas.
