@@ -38,7 +38,7 @@ I build ideas.
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[solana-cookbook](https://solanacookbook.com/)**: No description provided.
+- **[kit](https://www.solanakit.com)**: Solana JavaScript SDK
 <!-- LATEST_REPO_END -->
 
 ---
