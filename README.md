@@ -38,7 +38,7 @@ I build ideas.
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[kit](https://www.solanakit.com)**: Solana JavaScript SDK
+- **[whirlpools](https://orca-so.github.io/whirlpools/)**: Open source concentrated liquidity AMM contract on Solana
 <!-- LATEST_REPO_END -->
 
 ---
