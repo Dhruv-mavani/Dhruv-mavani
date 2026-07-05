@@ -48,7 +48,7 @@ I build ideas.
   <a href="https://linkedin.com/in/dhruvmavanii" target="blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="https://twitter.com/MavaniDhru67665" target="blank">
+  <a href="https://twitter.com/dhruvmavani03" target="blank">
     <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white" />
   </a>
   <a href="https://www.dhruvmavani.me" target="blank">
