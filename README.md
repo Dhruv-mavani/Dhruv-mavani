@@ -38,7 +38,7 @@ I build ideas.
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[whirlpools](https://orca-so.github.io/whirlpools/)**: Open source concentrated liquidity AMM contract on Solana
+- **[agave](https://www.anza.xyz/)**: Web-Scale Blockchain for fast, secure, scalable, decentralized apps and marketplaces.
 <!-- LATEST_REPO_END -->
 
 ---
