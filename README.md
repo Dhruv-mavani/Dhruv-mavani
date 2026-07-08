@@ -9,7 +9,6 @@
 
 
 
-I build ideas.
 
 ---
 
