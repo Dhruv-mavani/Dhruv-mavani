@@ -1,8 +1,15 @@
+<img width="448" height="252" alt="out" src="https://github.com/user-attachments/assets/2ffc11a2-0e12-4e4c-9ee0-a48dab47f782" />
+
+
+
+
 # <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=800&size=40&duration=3000&pause=500&color=EA580C&width=600&height=70&lines=👋+Hi,+I'm+Dhruv.;Full-stack+Developer.;Turning+coffee+into+code." alt="Typing SVG" />
 
 <p align="left">
   <img src="https://img.shields.io/badge/Status-Learning%20Solana%20And%20Blockchain%20Infra-Slate?style=flat-square&logoColor=white" />
 </p>
+
+
 
 I build ideas.
 
