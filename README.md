@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[github-contribution-bomber](https://github.com/Dhruv-mavani/github-contribution-bomber)**: No description provided.
+- **[github-contribution-bomber](https://github.com/Dhruv-mavani/github-contribution-bomber)**: Turn your boring 2D GitHub contribution graph into a cinematic 3D bombing run that updates automatically every day!
 <!-- LATEST_REPO_END -->
 
 ---
