@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[Bonding-Curve](https://github.com/Dhruv-mavani/Bonding-Curve)**: Understanding Bonding Curve 
+- **[candl](https://github.com/Dhruv-mavani/candl)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
