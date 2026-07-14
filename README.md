@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[candl](https://github.com/Dhruv-mavani/candl)**: No description provided.
+- **[sumeet2](https://github.com/Dhruv-mavani/sumeet2)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
