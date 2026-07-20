@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[sumeet2](https://github.com/Dhruv-mavani/sumeet2)**: No description provided.
+- **[candl](https://candlworld.vercel.app/)**: Candl - A Liquidity Infrastructure for NFTs
 <!-- LATEST_REPO_END -->
 
 ---
