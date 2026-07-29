@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[candl](https://candlworld.vercel.app/)**: Candl - A Liquidity Infrastructure for NFTs
+- **[ycc](https://github.com/Dhruv-mavani/ycc)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
