@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[ycc](https://ycct10.vercel.app)**: YCC
+- **[shaadi](https://shaadi-sigma-pied.vercel.app)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
