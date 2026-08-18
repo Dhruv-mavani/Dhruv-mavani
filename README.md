@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[ycc](https://ycct10.vercel.app)**: YCC
+- **[github-readme-stats](https://github-readme-stats.vercel.app)**: :zap: Dynamically generated stats for your github readmes
 <!-- LATEST_REPO_END -->
 
 ---
