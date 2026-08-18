@@ -32,12 +32,12 @@
 ### 📈 GitHub Stats & Streaks
 
 <div align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dhruv-mavani&show_icons=true&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&icon_color=ea580c&bg_color=ffffff" />
+  <img height="180em" src="https://github-readme-stats-dm-pi.vercel.app/api?username=dhruv-mavani&show_icons=true&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&icon_color=ea580c&bg_color=ffffff" />
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=dhruv-mavani&theme=rose&hide_border=true&fire=ea580c&ring=ea580c&currStreakLabel=ea580c&sideNums=334155&sideLabels=334155&dates=334155&bg_color=ffffff" />
 </div>
 
 <div align="left">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dhruv-mavani&layout=compact&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&bg_color=ffffff" />
+  <img height="180em" src="https://github-readme-stats-dm-pi.vercel.app/api/top-langs/?username=dhruv-mavani&layout=compact&theme=rose&hide_border=true&title_color=0f172a&text_color=334155&bg_color=ffffff" />
 </div>
 
 ---
