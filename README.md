@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[bgmexports](https://bgmexports.vercel.app)**: No description provided.
+- **[bmgexports](https://bgmexports.vercel.app)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
