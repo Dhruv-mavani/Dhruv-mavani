@@ -44,7 +44,7 @@
 
 ### 🛠️ Latest Project
 <!-- LATEST_REPO_START -->
-- **[wackostudios](https://wackostudios.vercel.app)**: No description provided.
+- **[wackostudios](https://wackostudios.in)**: No description provided.
 <!-- LATEST_REPO_END -->
 
 ---
